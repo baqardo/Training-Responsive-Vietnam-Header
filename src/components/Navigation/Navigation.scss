@@ -1,6 +1,10 @@
 .nav {
+  position: absolute;
+  z-index: 10;
+
   margin-top: 1.5em;
   margin-left: 5%;
+  width: 94%;
 
   display: flex;
   align-items: center;
@@ -69,7 +73,7 @@
 
       width: 23px;
       height: 13px;
-      background-image: url("./../../assets/arrow-1.png");
+      background-image: url("./../../assets/chevron.png");
     }
 
     &::before {
