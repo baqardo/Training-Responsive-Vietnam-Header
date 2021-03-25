@@ -31,7 +31,7 @@ const Header = props => (
       </div>
 
       <div className="header__next-trip">
-        <div className="header__arrow-container">
+        <div className="header__arrow-down-container" tabIndex="0">
           <img className="header__arrow-down" src={arrowImage} alt="arrow down" />
         </div>
         <span className="header__next">More Short Trips</span>
@@ -42,8 +42,9 @@ const Header = props => (
         <div className="header__title">
           <p className="header__title-line">Mekong</p>
           <p className="header__title-line">Delta</p>
-          <p className="header__title-line">Tour</p>
-          <span className="header__title-line header__title-line--country">Vietnam</span>
+          <p className="header__title-line">
+            Tour, <span className="header__title-line header__title-line--country">Vietnam</span>
+          </p>
         </div>
         <div className="header__cta">
           <p className="header__description">
@@ -71,7 +72,7 @@ const Header = props => (
           <div className="header__show-all">
             <p className="header__show">See all photos</p>
           </div>
-          <div className="header__arrow-container">
+          <div className="header__arrow-container" tabIndex="0">
             <img className="header__arrow-right" src={arrowImage} alt="arrow right" />
           </div>
         </div>

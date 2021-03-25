@@ -1,0 +1,22 @@
+.btn {
+  padding: 0.6em 2em;
+
+  background-color: #ff8800;
+  border: none;
+
+  box-shadow: 0px 2px 16px rgba(black, 0.4);
+
+  color: white;
+  font-family: source-sans-pro, sans-serif;
+  font-size: 1.75rem;
+  line-height: 1.4em;
+
+  transition: all 0.3s;
+  &:hover,
+  &:focus {
+    cursor: pointer;
+
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 20px rgba(black, 0.4);
+  }
+}
