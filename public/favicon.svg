@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="114.4" height="112.36" viewBox="0 0 114.4 112.36">
+  <style>
+    #Path_12 {
+      fill: black;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      #Path_12 {
+        fill: white;
+      }
+    }
+  </style>
+  <g id="logo" transform="translate(0 0.5)">
+    <path id="Path_12" data-name="Path 12"
+      d="M14.72,0H29.28V-49.92H82.56V-62.56H29.28V-98.72l47.848-.472,9.258-12.168H14.72Z"
+      transform="translate(-14.72 111.36)" />
+    <path id="Path_11" data-name="Path 11"
+      d="M67.287-49.831,86.56,0H102.4L60.96-111.36H42.88L3.2,0H17.92L35.7-49.831ZM39.538-62.471S48.8-89.92,51.52-99.36h.16c2.4,8.48,1.207,7.609,11.927,36.889Z"
+      transform="translate(11.28 111.36)" fill="#0d9206" stroke="rgba(0,0,0,0)" stroke-width="1" />
+  </g>
+</svg>

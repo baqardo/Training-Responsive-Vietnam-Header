@@ -1,131 +1,154 @@
 .nav {
-  position: absolute;
-  z-index: 10;
-
-  margin-top: 1.5em;
-  margin-left: 3em;
-  width: 94%;
-
   display: flex;
   align-items: center;
 
-  font-family: acumin-pro, sans-serif;
-  font-weight: 400;
-  font-size: 1.5rem;
-  line-height: 1.4em;
+  width: 93.75%;
+  margin: 0 auto;
+  margin-top: 1.5em;
 }
 
-.nav__item {
-  margin: 0 2em;
+.nav__logo-container {
+  font-size: 2rem;
+}
 
-  &--button {
-    margin: 0;
-    margin-right: 1em;
+.nav__logo {
+  color: black;
+  font-weight: 700;
+  line-height: 1.4em;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  outline-offset: 0.25em;
+
+  &--green {
+    color: #0d9206;
+  }
+}
+
+.nav__link-list {
+  display: flex;
+  align-items: center;
+
+  margin-left: 8em;
+
+  font-size: 1.5rem;
+  list-style: none;
+}
+
+.nav__link-container {
+  & + & {
+    margin-left: 3.625em;
+  }
+}
+
+.nav__drop-down {
+  &::after {
+    content: "";
+    display: inline-block;
+
+    margin-left: 2em;
+    margin-right: 0.625em;
+
+    width: 23px;
+    height: 13px;
+
+    background-image: url(../../assets/chevron.png);
+    background-size: cover;
   }
 }
 
 .nav__link {
+  display: block;
   position: relative;
 
-  padding: 0.7em 0;
-
   color: black;
+  line-height: 1.4em;
   text-decoration: none;
 
-  transition: all 0.3s;
+  outline-offset: 0.25em;
+  padding-bottom: 0.375em;
 
-  &:hover:before,
-  &:focus:before {
+  border-bottom: 4px solid transparent;
+
+  transition: all 0.3s;
+  &:hover::after {
     width: 100%;
   }
 
-  &::before {
+  &::after {
     content: "";
     position: absolute;
-    bottom: -0.5em;
+    bottom: 0;
     left: 0;
 
-    height: 4px;
     width: 0;
+    height: 4px;
+
     background-color: #ff8800;
 
     transition: all 0.3s;
   }
+}
 
-  &--logo {
-    padding: 0;
-    &::before {
-      content: initial;
-    }
-  }
+.nav__btn-list {
+  display: flex;
+  align-items: center;
 
-  &--current-page {
-    padding-right: 2em;
+  margin-left: auto;
 
-    pointer-events: none;
+  list-style: none;
+  font-size: 1.5rem;
+}
 
-    &::after {
-      content: "";
-      position: absolute;
-      right: 0;
-      top: 50%;
-      transform: translateY(-50%);
-
-      width: 23px;
-      height: 13px;
-      background-image: url("./../../assets/chevron.png");
-    }
-
-    &::before {
-      width: 100%;
-    }
+.nav__btn-container {
+  & + & {
+    margin-left: 1.5em;
   }
 }
 
-.nav__button {
-  padding: 0.4em 1em;
+.nav__btn {
+  border: none;
+  background-color: transparent;
+  padding: 0.5em 1.25em;
 
-  border-radius: 10px;
   border: 3px solid transparent;
+  border-radius: 0.5em;
 
-  text-decoration: none;
-  color: white;
+  font-size: inherit;
+  line-height: 1.4em;
 
   transition: all 0.3s;
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0px 3px currentColor;
+  }
 
   &--login {
     color: #0d9206;
 
-    &:hover,
-    &:focus {
-      background-color: #0d9206;
-
-      color: white;
+    &:hover {
+      border: 3px solid #0d9206;
     }
   }
 
-  &--sign-up {
+  &--sign {
     background-color: #ff8800;
 
-    &:hover,
-    &:focus {
+    color: white;
+
+    &:hover {
+      color: #ff8800;
       background-color: white;
       border: 3px solid #ff8800;
+    }
+
+    &:focus {
       color: #ff8800;
+      background-color: white;
     }
   }
-}
-
-.nav__logo-container {
-  margin-right: 12em;
-}
-
-.nav__link-container {
-  display: flex;
-}
-
-.nav__button-container {
-  margin-left: auto;
-
-  display: flex;
 }

@@ -2,61 +2,46 @@ import React from "react";
 
 import "./Navigation.scss";
 
-import logo from "../../assets/logo.png";
-
 const Navigation = props => (
-  <div className="container">
-    <nav className="nav">
-      <div className="nav__logo-container">
-        <a className="nav__link nav__link--logo" href="#home">
-          <img className="nav__logo" src={logo} alt="logo" />
+  <nav className="nav">
+    <div className="nav__logo-container">
+      <a className="nav__logo" href="#home">
+        FLY<span className="nav__logo nav__logo--green">AWAY</span>
+      </a>
+    </div>
+
+    <ul className="nav__link-list">
+      <li className="nav__link-container">
+        <a className="nav__link" href="#home">
+          <div className="nav__drop-down">Short Trips</div>
         </a>
-      </div>
-
-      <div className="nav__link-container">
-        <div className="nav__item">
-          <a className="nav__link nav__link--current-page" href="#home">
-            Short Trips
-          </a>
-        </div>
-        <div className="nav__item">
-          <a className="nav__link" href="#home">
-            About Us
-          </a>
-        </div>
-        <div className="nav__item">
-          <a className="nav__link" href="#home">
-            Testimonials
-          </a>
-        </div>
-        <div className="nav__item">
-          <a className="nav__link" href="#home">
-            Blog
-          </a>
-        </div>
-      </div>
-
-      <div className="nav__button-container">
-        <div className="nav__item nav__item--button">
-          <a className="nav__button nav__button--login" href="#home">
-            Login
-          </a>
-        </div>
-        <div className="nav__item nav__item--button">
-          <a className="nav__button nav__button--sign-up" href="#home">
-            Sign Up
-          </a>
-        </div>
-      </div>
-
-      <div className="nav__burger-container">
-        <a className="nav__link nav__link--burger" href="#home">
-          <div className="nav__burger-line"></div>
-          <div className="nav__burger-line"></div>
+      </li>
+      <li className="nav__link-container">
+        <a className="nav__link" href="#home">
+          About Us
         </a>
-      </div>
-    </nav>
-  </div>
+      </li>
+      <li className="nav__link-container">
+        <a className="nav__link" href="#home">
+          Testimonials
+        </a>
+      </li>
+      <li className="nav__link-container">
+        <a className="nav__link" href="#home">
+          Blog
+        </a>
+      </li>
+    </ul>
+
+    <ul className="nav__btn-list">
+      <li className="nav__btn-container">
+        <button className="nav__btn nav__btn--login">Login</button>
+      </li>
+      <li className="nav__btn-container">
+        <button className="nav__btn nav__btn--sign">Sign Up</button>
+      </li>
+    </ul>
+  </nav>
 );
 
 export default Navigation;
