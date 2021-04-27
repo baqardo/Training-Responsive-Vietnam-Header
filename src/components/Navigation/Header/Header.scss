@@ -2,8 +2,9 @@
 
 .header {
   display: flex;
+  align-items: center;
 
-  margin-top: 80px;
+  margin: auto 0;
 }
 
 .header__left {
@@ -31,8 +32,17 @@
     margin-bottom: 1.875rem;
 
     background-color: white;
-    border: 1px solid #0d9206;
+    border: 2px solid #0d9206;
     border-radius: 50%;
+
+    transition: all 0.3s;
+    &:hover {
+      background-color: #0d9206;
+    }
+
+    &:hover * {
+      filter: invert(1);
+    }
   }
 
   &-share {
@@ -45,11 +55,25 @@
     padding: 0.75rem 1.25rem;
 
     background-color: #789376;
+    border: 3px solid transparent;
     border-radius: 6rem;
+
+    text-decoration: none;
+
+    &:hover {
+      background-color: white;
+      border: 3px solid #789376;
+    }
+
+    &:hover * {
+      filter: invert(1);
+    }
   }
 
   &-icon {
     height: 60%;
+
+    transition: all 0.3s;
 
     &--twitter {
       height: 45%;
@@ -67,6 +91,8 @@
     font-size: 1.75rem;
     line-height: 1.4em;
     color: white;
+
+    transition: all 0.3s;
   }
 }
 
@@ -153,7 +179,7 @@
 
 .header__more {
   position: absolute;
-  bottom: 0;
+  bottom: 5%;
   left: 0;
 
   display: flex;
@@ -169,6 +195,12 @@
 
     box-shadow: 0px 7px 20px rgba(black, 0.25);
     border-radius: 50%;
+
+    transition: all 0.3s;
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 0px 10px 20px rgba(black, 0.3);
+    }
   }
 
   &-icon {
@@ -225,7 +257,7 @@
   }
 
   &-btn {
-    border: none;
+    border: 3px solid transparent;
     background-color: #ff8800;
 
     margin-top: 1.5em;
@@ -234,6 +266,23 @@
     font-size: 1.75rem;
     line-height: 1.4em;
     color: white;
+
+    transition: all 0.3s;
+    &:hover {
+      cursor: pointer;
+
+      border: 3px solid #ff8800;
+      background-color: white;
+      color: #ff8800;
+    }
+
+    &:focus {
+      outline-width: 0;
+    }
+
+    &:focus-visible {
+      outline-width: 5px;
+    }
   }
 }
 
@@ -247,7 +296,7 @@
 
   &-item {
     margin-right: 1rem;
-    width: 40%;
+    width: max(300px, 40%);
 
     box-shadow: 5px 6px 6px rgba(black, 0.15);
     border-radius: 10px;
@@ -261,6 +310,12 @@
   display: flex;
   align-items: center;
 
+  text-decoration: none;
+
+  &:hover > * {
+    background-color: #fff;
+  }
+
   &-description {
     margin-right: 1em;
     padding: 0.5em 1em;
@@ -272,6 +327,8 @@
     font-size: 1.75rem;
     line-height: 1.4em;
     color: #0d9206;
+
+    transition: all 0.3s;
   }
 
   &-btn {
@@ -286,6 +343,7 @@
     border-radius: 50%;
 
     transform: rotate(-90deg);
+    transition: all 0.3s;
   }
 
   &-arrow {

@@ -95,6 +95,7 @@
   align-items: center;
 
   margin-left: auto;
+  margin-bottom: 0.375em;
 
   list-style: none;
   font-size: 1.5rem;
@@ -123,8 +124,11 @@
   }
 
   &:focus {
-    outline: none;
-    box-shadow: 0 0 0px 3px currentColor;
+    outline-width: 0;
+  }
+
+  &:focus-visible {
+    outline-width: 5px;
   }
 
   &--login {
@@ -144,11 +148,6 @@
       color: #ff8800;
       background-color: white;
       border: 3px solid #ff8800;
-    }
-
-    &:focus {
-      color: #ff8800;
-      background-color: white;
     }
   }
 }

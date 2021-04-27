@@ -16,16 +16,16 @@ const Header = props => (
   <header className="header">
     <div className="header__left">
       <div className="header__connect">
-        <div className="header__connect-media">
+        <a href="#home" className="header__connect-media">
           <img className="header__connect-icon" src={facebookImage} alt="facebook" />
-        </div>
-        <div className="header__connect-media">
+        </a>
+        <a href="#home" className="header__connect-media">
           <img className="header__connect-icon header__connect-icon--twitter" src={twitterImage} alt="twitter" />
-        </div>
-        <div className="header__connect-share">
+        </a>
+        <a href="#home" className="header__connect-share">
           <img className="header__connect-icon header__connect-icon--share" src={shareImage} alt="share" />
           <span className="header__connect-description">Copy Link</span>
-        </div>
+        </a>
       </div>
       <div className="header__trip">
         <div className="header__trip-images">
@@ -43,9 +43,9 @@ const Header = props => (
         </div>
       </div>
       <div className="header__more">
-        <div className="header__more-btn">
+        <a href="#home" className="header__more-btn">
           <img className="header__more-icon" src={arrowImage} alt="arrow down" />
-        </div>
+        </a>
         <div className="header__more-description">More Short Trips</div>
       </div>
     </div>
@@ -68,12 +68,12 @@ const Header = props => (
         <img className="header__images-item" src={landscapeImage1} alt="tourist point 1" />
         <img className="header__images-item" src={landscapeImage2} alt="tourist point 2" />
         <img className="header__images-item" src={landscapeImage3} alt="tourist point 3" />
-        <div className="header__images-cta">
+        <a href="#home" className="header__images-cta">
           <div className="header__images-cta-description">See all photos</div>
           <div className="header__images-cta-btn">
             <img className="header__images-cta-arrow" src={arrowImage} alt="right arrow" />
           </div>
-        </div>
+        </a>
       </div>
     </div>
   </header>
