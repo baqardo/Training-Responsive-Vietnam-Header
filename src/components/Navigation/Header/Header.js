@@ -2,13 +2,53 @@ import React from "react";
 
 import "./Header.scss";
 
-import landscape1 from "../../../assets/landscape-1.png";
-import landscape2 from "../../../assets/landscape-2.png";
-import landscape3 from "../../../assets/landscape-3.png";
+import landscapeImage1 from "../../../assets/landscape-1.png";
+import landscapeImage2 from "../../../assets/landscape-2.png";
+import landscapeImage3 from "../../../assets/landscape-3.png";
+import arrowImage from "../../../assets/arrow.png";
+import facebookImage from "../../../assets/facebook.png";
+import twitterImage from "../../../assets/twitter.png";
+import shareImage from "../../../assets/share.png";
+import vietnamImage from "../../../assets/vietnam.png";
+import decorationImage from "../../../assets/decoration.png";
 
 const Header = props => (
   <header className="header">
-    <div className="header__left"></div>
+    <div className="header__left">
+      <div className="header__connect">
+        <div className="header__connect-media">
+          <img className="header__connect-icon" src={facebookImage} alt="facebook" />
+        </div>
+        <div className="header__connect-media">
+          <img className="header__connect-icon header__connect-icon--twitter" src={twitterImage} alt="twitter" />
+        </div>
+        <div className="header__connect-share">
+          <img className="header__connect-icon header__connect-icon--share" src={shareImage} alt="share" />
+          <span className="header__connect-description">Copy Link</span>
+        </div>
+      </div>
+      <div className="header__trip">
+        <div className="header__trip-images">
+          <img className="header__trip-image" src={vietnamImage} alt="mekong" />
+          <img className="header__trip-decoration" src={decorationImage} alt="decoration" />
+          <img
+            className="header__trip-decoration header__trip-decoration--rotate"
+            src={decorationImage}
+            alt="decoration"
+          />
+        </div>
+        <div className="header__trip-offer">
+          <div className="header__trip-time">2 Days</div>
+          <div className="header__trip-cost">$166 per person</div>
+        </div>
+      </div>
+      <div className="header__more">
+        <div className="header__more-btn">
+          <img className="header__more-icon" src={arrowImage} alt="arrow down" />
+        </div>
+        <div className="header__more-description">More Short Trips</div>
+      </div>
+    </div>
     <div className="header__right">
       <div className="header__title">
         <p className="header__title-line">Mekong</p>
@@ -25,9 +65,15 @@ const Header = props => (
         <button className="header__cta-btn">Book Now</button>
       </div>
       <div className="header__images">
-        <img className="header__images-item" src={landscape1} alt="tourist point 1" />
-        <img className="header__images-item" src={landscape2} alt="tourist point 2" />
-        <img className="header__images-item" src={landscape3} alt="tourist point 3" />
+        <img className="header__images-item" src={landscapeImage1} alt="tourist point 1" />
+        <img className="header__images-item" src={landscapeImage2} alt="tourist point 2" />
+        <img className="header__images-item" src={landscapeImage3} alt="tourist point 3" />
+        <div className="header__images-cta">
+          <div className="header__images-cta-description">See all photos</div>
+          <div className="header__images-cta-btn">
+            <img className="header__images-cta-arrow" src={arrowImage} alt="right arrow" />
+          </div>
+        </div>
       </div>
     </div>
   </header>
