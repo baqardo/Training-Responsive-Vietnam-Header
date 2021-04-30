@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/Training-Responsive-Vietnam-Header/static/css/main.70273887.chunk.css",
+    "main.js": "/Training-Responsive-Vietnam-Header/static/js/main.991c344a.chunk.js",
+    "main.js.map": "/Training-Responsive-Vietnam-Header/static/js/main.991c344a.chunk.js.map",
+    "runtime-main.js": "/Training-Responsive-Vietnam-Header/static/js/runtime-main.a9097292.js",
+    "runtime-main.js.map": "/Training-Responsive-Vietnam-Header/static/js/runtime-main.a9097292.js.map",
+    "static/js/2.f76ca0a1.chunk.js": "/Training-Responsive-Vietnam-Header/static/js/2.f76ca0a1.chunk.js",
+    "static/js/2.f76ca0a1.chunk.js.map": "/Training-Responsive-Vietnam-Header/static/js/2.f76ca0a1.chunk.js.map",
+    "static/js/3.e6fafa1e.chunk.js": "/Training-Responsive-Vietnam-Header/static/js/3.e6fafa1e.chunk.js",
+    "static/js/3.e6fafa1e.chunk.js.map": "/Training-Responsive-Vietnam-Header/static/js/3.e6fafa1e.chunk.js.map",
+    "index.html": "/Training-Responsive-Vietnam-Header/index.html",
+    "static/css/main.70273887.chunk.css.map": "/Training-Responsive-Vietnam-Header/static/css/main.70273887.chunk.css.map",
+    "static/js/2.f76ca0a1.chunk.js.LICENSE.txt": "/Training-Responsive-Vietnam-Header/static/js/2.f76ca0a1.chunk.js.LICENSE.txt",
+    "static/media/decoration.5084cff4.png": "/Training-Responsive-Vietnam-Header/static/media/decoration.5084cff4.png",
+    "static/media/landscape-1.8554710f.png": "/Training-Responsive-Vietnam-Header/static/media/landscape-1.8554710f.png",
+    "static/media/landscape-2.14843fab.png": "/Training-Responsive-Vietnam-Header/static/media/landscape-2.14843fab.png",
+    "static/media/landscape-3.837691b5.png": "/Training-Responsive-Vietnam-Header/static/media/landscape-3.837691b5.png",
+    "static/media/vietnam.55d7c223.png": "/Training-Responsive-Vietnam-Header/static/media/vietnam.55d7c223.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a9097292.js",
+    "static/js/2.f76ca0a1.chunk.js",
+    "static/css/main.70273887.chunk.css",
+    "static/js/main.991c344a.chunk.js"
+  ]
+}
