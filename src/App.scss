@@ -5,4 +5,25 @@
   height: 100vh;
   min-height: 1080px;
   font-family: acumin-pro, sans-serif;
+
+  @media screen and (min-width: 1281px) and (max-width: 1600px) {
+    min-height: clamp(960px, 70vw, 1080px);
+  }
+
+  @media screen and (min-width: 961px) and (max-width: 1280px) {
+    min-height: 760px;
+    min-height: clamp(760px, 75vw, 960px);
+  }
+
+  @media screen and (max-width: 960px) {
+    min-height: auto;
+  }
+
+  @media screen and (min-width: 1921px) {
+    overflow: hidden;
+  }
+
+  &--no-overflow {
+    overflow-y: hidden;
+  }
 }

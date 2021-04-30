@@ -1,0 +1,300 @@
+.nav {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  padding: 0 2.25rem;
+  padding-top: 1.5em;
+
+  @media screen and (min-width: 1921px) {
+    width: 1800px;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.nav__logo-container {
+  font-size: 2rem;
+
+  @media screen and (max-width: 960px) {
+    font-size: 3rem;
+  }
+}
+
+.nav__logo {
+  color: black;
+  font-weight: 700;
+  line-height: 1.4em;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  outline-offset: 0.25em;
+
+  &--green {
+    color: #0d9206;
+  }
+}
+
+.nav__link-list {
+  display: flex;
+  align-items: center;
+
+  margin-left: 8em;
+
+  font-size: 1.5rem;
+  list-style: none;
+
+  @media screen and (max-width: 960px) {
+    display: none;
+  }
+}
+
+.nav__link-container {
+  & + & {
+    margin-left: 3.625em;
+  }
+}
+
+.nav__drop-down {
+  &::after {
+    content: "";
+    display: inline-block;
+
+    margin-left: 2em;
+    margin-right: 0.625em;
+
+    width: 1.75rem;
+    height: 1rem;
+
+    background-image: url(../../assets/chevron.png);
+    background-size: cover;
+  }
+}
+
+.nav__link {
+  display: block;
+  position: relative;
+
+  color: black;
+  line-height: 1.4em;
+  text-decoration: none;
+
+  outline-offset: 0.25em;
+  padding-bottom: 0.375em;
+
+  border-bottom: 4px solid transparent;
+
+  transition: all 0.3s;
+  &:hover::after {
+    width: 100%;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 0;
+    height: 4px;
+
+    background-color: #ff8800;
+
+    transition: all 0.3s;
+  }
+
+  &--mobile {
+    padding-bottom: 1.5rem;
+  }
+}
+
+.nav__btn-list {
+  display: flex;
+  align-items: center;
+
+  margin-left: auto;
+  margin-bottom: 0.375em;
+
+  list-style: none;
+  font-size: 1.5rem;
+
+  @media screen and (max-width: 960px) {
+    display: none;
+  }
+}
+
+.nav__btn-container {
+  & + & {
+    margin-left: 1.5em;
+  }
+}
+
+.nav__btn {
+  border: none;
+  background-color: transparent;
+  padding: 0.5em 1.25em;
+
+  border: 3px solid transparent;
+  border-radius: 0.5em;
+
+  font-size: inherit;
+  line-height: 1.4em;
+
+  transition: all 0.3s;
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:focus {
+    outline-width: 0;
+  }
+
+  &:focus-visible {
+    outline-width: 5px;
+  }
+
+  &--login {
+    color: #0d9206;
+
+    &:hover {
+      border: 3px solid #0d9206;
+    }
+  }
+
+  &--sign {
+    background-color: #ff8800;
+
+    color: white;
+
+    &:hover {
+      color: #ff8800;
+      background-color: white;
+      border: 3px solid #ff8800;
+    }
+  }
+
+  &--mobile {
+    border: 3px solid #0d9206;
+
+    margin-right: 2rem;
+
+    &:hover {
+      color: white;
+      background-color: #0d9206;
+    }
+  }
+
+  &--small {
+    padding: 0.25em 0.75em;
+  }
+}
+
+.nav__burger {
+  display: none;
+
+  z-index: 20;
+
+  margin-left: auto;
+  list-style: none;
+
+  outline-offset: 0.5rem;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:hover &-line {
+    background-color: #0d9206;
+  }
+
+  @media screen and (max-width: 960px) {
+    display: block;
+  }
+
+  &--active &-line:nth-child(1) {
+    transform: translateY(1rem) rotate(-135deg);
+  }
+  &--active &-line:nth-child(2) {
+    opacity: 0;
+  }
+  &--active &-line:nth-child(3) {
+    transform: translateY(-0.5rem) rotate(135deg);
+  }
+
+  &-line {
+    width: 3rem;
+    height: 0.375rem;
+
+    background-color: black;
+
+    transition: all 0.3s;
+    & + & {
+      margin-top: 0.375rem;
+    }
+  }
+}
+
+.nav__mobile {
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+
+  z-index: 10;
+
+  width: 100vw;
+  min-height: 100vh;
+
+  padding-top: 8rem;
+  padding-bottom: 1rem;
+
+  font-size: 3rem;
+
+  &-list {
+    opacity: 0;
+    visibility: hidden;
+
+    list-style: none;
+    text-align: center;
+
+    transition: all 1s;
+    &--visible {
+      visibility: visible;
+      opacity: 1;
+      pointer-events: all;
+      transition: all 1s 0.3s;
+    }
+  }
+
+  &-item {
+    & + & {
+      margin-top: 2rem;
+    }
+  }
+
+  &-background {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    z-index: -10;
+    opacity: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: white;
+
+    transition: opacity 1s 0.5s;
+    &--visible {
+      opacity: 1;
+
+      transition: opacity 1s;
+    }
+  }
+}

@@ -1,6 +1,6 @@
 import "./App.scss";
-import Header from "./components/Navigation/Header/Header";
-import Navigation from "./components/Navigation/Navigation";
+import Header from "./components/Header/Header";
+import Navigation from "./containers/Navigation/Navigation";
 
 function App() {
   return (

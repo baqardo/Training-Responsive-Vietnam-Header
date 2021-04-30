@@ -2,15 +2,15 @@ import React from "react";
 
 import "./Header.scss";
 
-import landscapeImage1 from "../../../assets/landscape-1.png";
-import landscapeImage2 from "../../../assets/landscape-2.png";
-import landscapeImage3 from "../../../assets/landscape-3.png";
-import arrowImage from "../../../assets/arrow.png";
-import facebookImage from "../../../assets/facebook.png";
-import twitterImage from "../../../assets/twitter.png";
-import shareImage from "../../../assets/share.png";
-import vietnamImage from "../../../assets/vietnam.png";
-import decorationImage from "../../../assets/decoration.png";
+import landscapeImage1 from "../../assets/landscape-1.png";
+import landscapeImage2 from "../../assets/landscape-2.png";
+import landscapeImage3 from "../../assets/landscape-3.png";
+import arrowImage from "../../assets/arrow.png";
+import facebookImage from "../../assets/facebook.png";
+import twitterImage from "../../assets/twitter.png";
+import shareImage from "../../assets/share.png";
+import vietnamImage from "../../assets/vietnam.png";
+import decorationImage from "../../assets/decoration.png";
 
 const Header = props => (
   <header className="header">
@@ -51,9 +51,9 @@ const Header = props => (
     </div>
     <div className="header__right">
       <div className="header__title">
-        <p className="header__title-line">Mekong</p>
-        <p className="header__title-line">Delta</p>
         <p className="header__title-line">
+          Mekong <br className="header__title-break" />
+          Delta <br className="header__title-break header__title-break--visible" />
           Tour, <span className="header__title-highlight">Vietnam</span>
         </p>
       </div>
