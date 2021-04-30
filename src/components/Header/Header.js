@@ -76,6 +76,12 @@ const Header = props => (
         </a>
       </div>
     </div>
+    <div className="header__design">
+      Designed by{" "}
+      <a className="header__design-creator" href="https://dribbble.com/danishkhaan">
+        Danish Khan
+      </a>
+    </div>
   </header>
 );
 
